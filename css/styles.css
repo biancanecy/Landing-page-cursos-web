@@ -1,0 +1,148 @@
+@font-face {  /* importação de fonte baixada*/
+    font-family: 'Mabook';
+    src: url('../fontes/mabook/Mabook.ttf') format('truetype');
+  } 
+
+
+body{
+    background:url("../img/fundoo.png");
+    color: white;
+    font-family: "Mabook";
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+
+    background-size: 100%; /*para deixar a imagem ocupando 100% da tela */
+
+    background-repeat: no-repeat; /*não repetir a imagem*/
+      
+}
+
+header{
+    display: flex; /*display flexivel*/
+    flex-direction: row;  /* criar uma linha para o header*/
+    justify-content: space-between; /*colocar menu no canto da tela*/
+    align-items: center; /*alinhar itens dentro cabeçalho*/
+  
+    
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+    
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    
+}
+
+
+
+
+h1{
+    font-weight: 200; /*ajustar grossura da fonte de cursos gratuitos*/
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+
+h2{
+    font-size: 56px;
+    font-weight: 200;
+    line-height: 10px;
+    
+}
+ p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 20px;
+    font-weight: 100;
+    font-size: 20px;
+    max-width: 500px; /* largura maxima de 500 pixels*/
+    
+ }
+
+ span{ /* pra alterar somente a cor dessa imagem*/
+    color: rgb(4, 4, 58);
+    text-shadow: 0 0 10px white; /*para colocar um sombreado na fonte*/
+    
+
+ }
+
+ img{
+    width: 200;
+ }
+
+ a{
+    color: white;
+   font-size: 15px; /*tamanho da fonte do menu*/
+ }
+
+ a:hover{
+    color: rgb(145, 207, 207); /*efeito muda de cor*/
+    transition: 0.5s;
+ }
+
+
+
+ #jatem{ /*id do botao ja tem uma conta*/
+
+    border: 2px  solid rgb(17, 97, 216); /* espessura da borda da opção ja tem uma conta*/
+    padding: 10px; /* tamanho de dentro da borda*/
+    border-radius: 8px  ; /* ponta arredondada da borda*/
+
+    /*mudar cor da borda direita e esquerda*/
+    border-left-color: rgb(174, 174, 214);
+    border-right-color: rgb(174, 174, 214);
+ }
+
+ #jatem:hover{
+    background-color: white; /* mudar o fundo do botao quando passa o mouse*/
+
+    color: black; /* mudar cor da fonte quando passa o mouse*/
+    
+ }
+
+ form{ /* formatação do formulario*/
+
+    display: flex;
+    flex-direction: column; /*deixar ele em coluna*/
+    width: 70%; /* para ocupar 70% do tamanho da div dele, ou seja ficar menor*/
+
+
+ }
+
+ form [type="submit"]{ /*estilização somente do botao de enviar*/
+        height: 53px; /* altura*/
+        width: 30%; /*largura de 30% o tamanho do formulario*/
+        background-color: rgb(23, 26, 240); /* cor do fundo do botão*/
+        color: rgb(253, 252, 252); /* cor da letra do botão enviar*/
+        font-weight: bold;/* intensidade da fonte*/
+     
+ }
+
+
+ form [type="submit"]{
+    cursor: pointer;  /* cursor em maozinha*/
+    
+
+
+
+
+ }
+ input{ /* formatação dos elementos do formulário*/
+    margin-top: 20px; /* separar cada bloquindo do formulario*/
+    height: 20px; /* deixar o bloco do form maior*/
+    padding: 15px;
+    border-radius: 20px; /* arrendondar as bordas*/
+    border: none; /* tirar as bordas pretas que ficam*/
+    font-size: 15px; /* aumentar o tamanho da letra da solicitação do formulário*/
+
+ }
